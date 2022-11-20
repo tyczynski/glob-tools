@@ -19,8 +19,9 @@ const customJestConfig: Config.InitialOptions = {
   testEnvironment: 'jest-environment-jsdom',
   moduleNameMapper: {
     // Handle module aliases
-    '^~/pubic/(.*)$': '<rootDir>/public/$1',
+    '^~/public/(.*)$': '<rootDir>/public/$1',
     '^~/utils/(.*)$': '<rootDir>/src/utils/$1',
+    '^~/components/(.*)$': '<rootDir>/src/components/$1',
   },
 };
 
