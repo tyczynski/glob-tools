@@ -1,5 +1,6 @@
 import { type PropsWithChildren } from 'react';
 import { type AppProps } from 'next/app';
+import 'normalize.css';
 
 const Noop = ({ children }: PropsWithChildren) => <>{children}</>;
 
