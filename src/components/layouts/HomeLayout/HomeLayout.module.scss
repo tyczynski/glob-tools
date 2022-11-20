@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.innerContainer {
+  width: 100%;
+  max-width: 320px;
+  padding: 62px 24px;
+}

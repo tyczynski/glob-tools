@@ -1,10 +1,16 @@
-import { greeting } from '~/utils/greeting';
+import { useState, type FormEvent } from 'react';
+import globToRegexp from 'glob-to-regexp';
 
-export default function HomePage() {
+import { HomeLayout } from '~/components/layouts/HomeLayout';
+import { Form } from '~/components/glob-transformer/Form';
+
+const HomePage = () => {
+
   return (
-    <div>
-      <h1>{greeting()}</h1>
-      <h2>Next.js starter</h2>
-    </div>
+    <HomeLayout>
+      <Form />
+    </HomeLayout>
   );
-}
+};
+
+export default HomePage;
