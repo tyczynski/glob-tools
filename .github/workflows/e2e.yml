@@ -1,0 +1,43 @@
+name: End-to-End tests
+
+on:
+  push:
+    branches-ignore:
+      - 'master'
+
+jobs:
+  chrome:
+    runs-on: ubuntu-20.04
+    name: E2E on Chrome
+    steps:
+      - uses: actions/checkout@v2
+      - uses: cypress-io/github-action@v4
+        with:
+          browser: chrome
+          build: npm run build
+          start: npm run start
+          wait-on: http://localhost:3000
+
+  firefox:
+    runs-on: ubuntu-20.04
+    name: E2E on Firefox
+    steps:
+      - uses: actions/checkout@v2
+      - uses: cypress-io/github-action@v4
+        with:
+          browser: firefox
+          build: npm run build
+          start: npm run start
+          wait-on: http://localhost:3000
+
+  edge:
+    runs-on: windows-latest
+    name: E2E on Microsoft Edge
+    steps:
+      - uses: actions/checkout@v2
+      - uses: cypress-io/github-action@v4
+        with:
+          browser: edge
+          build: npm run build
+          start: npm run start
+          wait-on: http://localhost:3000
