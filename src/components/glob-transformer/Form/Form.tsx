@@ -50,7 +50,8 @@ export const Form = () => {
 
   return (
     <>
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
+      {/* @ts-ignore */}
+      <div className={styles.container}>
         {/* @ts-ignore */}
         <label className={styles.title} htmlFor="glob-value">
           Transform Glob to RegExp
