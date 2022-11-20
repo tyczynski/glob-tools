@@ -26,6 +26,9 @@
     ],
     "baseUrl": "src",
     "paths": {
+      "~/components/*": [
+        "../components/*"
+      ],
       "~/public/*": [
         "../public/*"
       ],
