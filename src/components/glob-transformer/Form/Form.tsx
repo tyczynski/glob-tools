@@ -37,9 +37,11 @@ export const Form = () => {
 
   const handleCopyRegExp = () => {
     navigator.clipboard.writeText(regexpValue.toString()).then(() => {
+      // @ts-ignore
       alertRef.current?.classList.add(styles.alertVisible);
 
       setTimeout(
+        // @ts-ignore
         () => alertRef.current?.classList.remove(styles.alertVisible),
         3000,
       );
@@ -49,11 +51,13 @@ export const Form = () => {
   return (
     <>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
+        {/* @ts-ignore */}
         <label className={styles.title} htmlFor="glob-value">
           Transform Glob to RegExp
         </label>
 
         <input
+          // @ts-ignore
           className={styles.inputGlob}
           placeholder="gl*b"
           id="glob-value"
@@ -62,7 +66,9 @@ export const Form = () => {
           onChange={handleGlobValue}
         />
 
+        {/* @ts-ignore */}
         <div className={styles.extendedGroup}>
+          {/* @ts-ignore */}
           <label className={styles.extendedGroupLabel} htmlFor="extended">
             Extended (
             <a
@@ -90,6 +96,7 @@ export const Form = () => {
 
       <button onClick={handleCopyRegExp}>Copy RegExp</button>
 
+      {/* @ts-ignore */}
       <p ref={alertRef} className={styles.alert}>
         RegExp copied to clipboard.
       </p>
