@@ -1,0 +1,26 @@
+.title {
+  margin: 0 0 8px;
+}
+
+.inputGlob {
+  margin: 0 0 16px;
+}
+
+.extendedGroup {
+  display: flex;
+  align-items: center;
+}
+
+.extendedGroupLabel {
+  margin: 0 8px 0 0;
+}
+
+.alert {
+  display: none;
+  border: 1px solid green;
+  padding: 8px;
+}
+
+.alertVisible {
+  display: block;
+}
