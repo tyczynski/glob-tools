@@ -60,6 +60,7 @@ export const Form = () => {
         <input
           // @ts-ignore
           className={styles.inputGlob}
+          role="textbox"
           placeholder="gl*b"
           id="glob-value"
           type="text"
