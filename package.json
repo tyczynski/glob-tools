@@ -15,7 +15,7 @@
     "test:lint": "next lint",
     "test:unit": "jest",
     "test:unit:watch": "jest --watch",
-    "testtype-check": "tsc --pretty --noEmit"
+    "test:type-check": "tsc --pretty --noEmit"
   },
   "engines": {
     "node": ">= 18.12.1",
