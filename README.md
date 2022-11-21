@@ -63,16 +63,15 @@ $ npm run test:type-check
 ├── __mocks__               # Jest mocks
 ├── .vscode                 # Visual Studio Code configuration folder
 ├── cypress                 # Cypress folder
-├── public                  # Public folder
+├── public                  # Next.js folder with public assets
 ├── src
 │   ├── components          # React components
-│   ├── pages               # Next.js pages
-│   └── utils               # Utility folder
-├── cypress.config.tw        # Cypress configuration file
+│   └── pages               # Next.js pages
+├── cypress.config.ts       # Cypress configuration file
 ├── next-env.d.ts           # Auto-generated Next.js types
-├── next.config.js           # Next.js configuration file
+├── next.config.js          # Next.js configuration file
 ├── README.md               # README file
-└── tsconfig.json            # TypeScript configuration
+└── tsconfig.json           # TypeScript configuration
 ```
 
 ### /public
